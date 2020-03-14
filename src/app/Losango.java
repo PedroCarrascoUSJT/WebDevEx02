@@ -8,9 +8,9 @@ public class Losango extends Poligono{
 
     @Override
     public double perimetro() {
-        Double hipPow = Math.pow(getBase()/2, 2) * Math.pow(getAltura()/2, 2);  
+        Double hipPow = Math.pow(getBase()/2, 2) + Math.pow(getAltura()/2, 2);  
         double verticeLosango = Math.sqrt(hipPow);
-        return 4*verticeLosango;
+        return Double.parseDouble(String.format("%.2f", 4*verticeLosango).replace(',', '.'));
     }
 
 }

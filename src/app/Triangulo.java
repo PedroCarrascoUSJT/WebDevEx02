@@ -13,6 +13,9 @@ public class Triangulo extends Poligono{
 
     @Override
     public double perimetro() {
-        return 0;
+        double cateto = getBase()/2;
+        double hip = Math.sqrt((cateto*cateto) + (getAltura()*getAltura()));
+        double perimetro = (hip*2) + getBase();
+        return Double.parseDouble(String.format("%.2f", perimetro).replace(',', '.'));
     }
 }

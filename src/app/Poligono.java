@@ -1,7 +1,5 @@
 package app;
 
-import java.text.DecimalFormat;
-
 public abstract class Poligono extends Figura{
 
     private double base;

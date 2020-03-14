@@ -15,11 +15,11 @@ public class Quadrado extends Poligono implements Diagonal{
                 (getBase()*getBase())
             )
         );
-        return hip;
+        return Double.parseDouble(String.format("%.2f",hip).replace(',', '.'));
     }
 
     @Override
     public double perimetro() {
-        return 4*getBase();
+        return Double.parseDouble(String.format("%.2f", 4*getBase()).replace(',', '.'));
     }
 }

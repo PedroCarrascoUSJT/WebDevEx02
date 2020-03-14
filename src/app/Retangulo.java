@@ -13,13 +13,12 @@ public class Retangulo extends Poligono implements Diagonal{
                 (getBase()*getBase())
             )
         );
-        return hip;
+        return Double.parseDouble(String.format("%.2f",hip).replace(',', '.'));
     }
 
     @Override
     public double perimetro() {
-        // TODO Auto-generated method stub
-        return 0;
+        return Double.parseDouble(String.format("%.2f", (2*getBase())+(2*getAltura())).replace(',', '.'));
     }
 
 }

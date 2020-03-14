@@ -11,12 +11,17 @@ public class Geometria {
         figuras.add(new Quadrado(10));
         figuras.add(new Triangulo(10,7));
         figuras.add(new Circulo(3.6));
+        figuras.add(new Trapezio(10, 5, 6));
 
         int i=0;
         for(Figura figura : figuras){
             i++;
-            System.out.println("A figura "+i+" tem como área: ");
-            System.out.println(figura.area());
+            System.out.println("A figura "+i+":");
+            System.out.println("\tÁrea:"+figura.area());
+            System.out.println("\tPerimetro:"+figura.perimetro());
+            if(figura instanceof Diagonal)
+                System.out.println("\tDiagonal:"+((Diagonal)figura).calculaDiagonal());
+            
         }
 
     }
