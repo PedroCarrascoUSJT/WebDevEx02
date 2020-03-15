@@ -13,17 +13,17 @@ public abstract class Poligono3D extends Figura{
     }
 
     public double volume(){
-        return getHeight()*getLength()*getWidth();
+        return roundDouble(getHeight()*getLength()*getWidth());
     }
 
     @Override
-    public double area() {
-        return 6*(getWidth()*getHeight());
+    public double area(){
+        return roundDouble(6*(getWidth()*getHeight()));
     }
 
     @Override
     public double perimetro() {
-        return getHeight()*12;
+        return roundDouble(getHeight()*12);
     }
 
     //#region Métodos acessores/modificadores

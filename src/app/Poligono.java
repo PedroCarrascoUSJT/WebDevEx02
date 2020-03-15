@@ -12,7 +12,7 @@ public abstract class Poligono extends Figura{
 
     @Override
     public double area(){
-        Double area = getBase()*getAltura();
+        double area = getBase()*getAltura();
         return Double.parseDouble(String.format("%.2f", area).replace(',', '.'));
     }
 
